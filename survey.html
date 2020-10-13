@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD120-Rudy Walling</title>
+    <meta name="author" content="Rudy Walling">
+    <meta name="description" content="My CSD120 2020 Website explaining who I am and what I enjoy">
+</head>
+
+<body>
+    <div class="width-wrap">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li>
+                        <a href=index.html>Home</a>
+                    </li>
+                    <li>
+                        <a href=links.html>Links</a>
+                    </li>
+                    <li>
+                        <a href=glossary.html>Glossary</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Found me!-->
+        </header>
+        <main>
+            <h1>Survey</h1>
+            <form action="https://formspree.io/f/xqkgpaaw" method="POST">
+                <ul>
+                <label for="Name">What is your name?</label>
+                <input type="text" id="Name" name="User_name" required><br> <br>
+                <label for="email">What is your email?</label>
+                <input type="text" id="email" name="email_field" required><br> <br>
+                <label for="Number">Which whole number is best?</label>
+                <input type="number" id="Number" name="best_whole_number" required><br> <br>
+                <label for="Day">Which day is the best?</label>
+                <input type="date" id="Day" name="best_day" required><br> <br>
+                <label for="bear">Which bear is the best?</label>
+                <select id="bear">
+                    <option value="0"></option>
+                    <option value="1">Black</option>
+                    <option value="2">Brown</option>
+                    <option value="3">Care</option>
+                    <option value="4">Panda</option>
+                    <option value="5">Polar</option>
+                    <option value="6">Teddy</option>
+                </select>
+                <fieldset>
+                    <legend>Do you like radio buttons?</legend>
+                    <ul>
+                        <input type="radio" id="yes" name="radio">
+                        <label for="yes">Yes</label><br>
+                        <input type="radio" id="no" name="radio">
+                        <label for="no">No</label><br>
+                        <input type="radio" id="None" name="radio" checked>
+                        <label for="None">None of your business</label>
+                    </ul>
+                </fieldset>
+                <label for="life">What is the meaning of life?</label>
+                <textarea placeholder="Type your answer here" id="life" name="life_meaning" rows="5" cols="50"></textarea><br>
+                <button type="submit" value="send">send</button>
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>
+                Roads? Where We’re Going,
+                We Don’t Need Roads.<br>
+                <cite>—<span class="author">Dr Emmett Brown</span></cite>
+            </blockquote><br>
+            <p> © 2020 <a href="mailto:19031654@saultcollege.ca?subject=Message%20from%20CSD120%20Website">Rudy
+                    Walling</a></p>
+            <picture>
+                <source type="image/svg" srcset="images/sc-logo.svg">
+                <source type="image/png" srcset="images/sc-logo.png">
+                <img src="images/sc-logo.png" srcset="images/sc-logo.svg 70w" alt="Logo for Sault College"
+                    sizes="(max-width:500px) 105px, 140px">
+            </picture>
+        </footer>
+        <a href="#top" title="Back to Top">◤</a>
+    </div>
+</body>
+
+</html>
