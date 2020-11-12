@@ -22,6 +22,7 @@ dt::after {
 }
 
 a:link {
+    text-decoration: none;
     color: rgb(255, 0, 30)
 }
 
@@ -30,7 +31,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(255, 166, 0);
 }
 
@@ -44,7 +45,9 @@ body {
 }
 
 h1 {
-    color: rgb(137, 7, 95)
+    color: rgb(255, 0, 0);
+    background: rgb(0,9,255);
+background: radial-gradient(circle, rgba(0,9,255,0.5269565217391304) 0%, rgba(255,0,0,0.16869565217391302) 100%);
 }
 
 h2 {
@@ -69,7 +72,15 @@ header li {
     display: inline-block;
     padding: 1em 1em 0.5em;
 }
-
+header a{
+    font-weight: bold;
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+header a:hover{
+    text-decoration: none;
+}
 nav ul {
     margin: 0;
     padding: 0;
@@ -138,4 +149,25 @@ input:valid {
     border-width: 0 1px 1px 1px;
     margin-bottom: 3em;
     background-color: rgb(55, 10, 16);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shadows Into Light Two', cursive;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.6;
+}
+ol{
+    list-style-type: upper-roman;
+}
+iframe{
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+fieldset li{
+    padding: 0;
+    list-style-type: none;
+}
+.bio{
+    
 }
