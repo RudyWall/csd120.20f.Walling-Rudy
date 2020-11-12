@@ -14,9 +14,11 @@ dt::after {
     content: ":";
 }
 
-.hr {
-    margin: 3em 0em 2em 0em;
+hr{
+    margin: 3em 0 2em 0;
+    border:none;
     border-bottom: 3px dotted rgb(58, 0, 0);
+    width: 50vw;
     max-width: 890px;
     min-width: 300px;
 }
@@ -41,7 +43,7 @@ body {
 }
 
 ::selection {
-    color: rgb(255, 166, 0)
+    background-color: rgb(255, 166, 0)
 }
 
 h1 {
@@ -59,17 +61,17 @@ h3 {
 }
 
 header {
-    border-top: 4px solid rgb(0, 0, 0, 0.3);
+    border-top: 4px solid rgb(255, 255, 255, 0.1);
     margin: 0 -2em 0;
 }
 
 header nav {
-    border-bottom: 1px dotted rgb(0, 0, 0, 0.3);
+    border-bottom: 1px dotted rgb(255, 255, 255, 0.3);
     margin: 0 2em 2em;
 }
 
 header li {
-    display: inline-block;
+    display: inline;
     padding: 1em 1em 0.5em;
 }
 header a{
@@ -87,7 +89,9 @@ nav ul {
 }
 
 nav a {
-    border-top: 4px transparent rgb(0, 0, 0, 0.3);
+    border-top: 4px solid rgb(0, 0, 0, 0);
+    display: inline-block;
+    margin: -4px 1em 0;
     padding: 1em 1em 0.5em;
     color: rgb(255, 0, 30);
 }
@@ -96,33 +100,38 @@ nav a:hover {
     border-top: 4px solid rgb(255, 166, 0);
 }
 
-table {
+table td,
+table th {
     padding: 0.3em 1em 0.3em 1em;
 }
 
-thead {
+thead th,
+thead td {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
-tbody {
+tbody th {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
-tfoot {
+tfoot th,
+tfoot td {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
 td {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) td {
     background-color: rgba(255, 255, 255, 0.15)
 }
 
-button[type=submit] {
+[type=submit] {
     border: none;
-    padding: 1em 3em 1em 3em
+    padding: 1em 3em 1em 3em;
+    color: rgba(0,0,0,0.9);
+    background-color: rgba(255,255,255,0.9);
 }
 
 label {
