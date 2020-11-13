@@ -1,11 +1,11 @@
 html {
     box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
+
+*, *::before, *::after {
     box-sizing: inherit;
 }
+
 div {
     box-sizing: border-box;
 }
@@ -14,9 +14,9 @@ dt::after {
     content: ":";
 }
 
-hr{
+hr {
     margin: 3em 0 2em 0;
-    border:none;
+    border: none;
     border-bottom: 3px dotted rgb(58, 0, 0);
     width: 50vw;
     max-width: 890px;
@@ -48,8 +48,8 @@ body {
 
 h1 {
     color: rgb(255, 0, 0);
-    background: rgb(0,9,255);
-background: radial-gradient(circle, rgba(0,9,255,0.5269565217391304) 0%, rgba(255,0,0,0.16869565217391302) 100%);
+    background: rgb(0, 9, 255);
+    background: radial-gradient(circle, rgba(0, 9, 255, 0.5) 0%, rgba(255, 0, 0, 0.2) 100%);
 }
 
 h2 {
@@ -74,15 +74,18 @@ header li {
     display: inline;
     padding: 1em 1em 0.5em;
 }
-header a{
+
+header a {
     font-weight: bold;
     list-style-type: none;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-header a:hover{
+
+header a:hover {
     text-decoration: none;
 }
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -100,13 +103,11 @@ nav a:hover {
     border-top: 4px solid rgb(255, 166, 0);
 }
 
-table td,
-table th {
+table td, table th {
     padding: 0.3em 1em 0.3em 1em;
 }
 
-thead th,
-thead td {
+thead th, thead td {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
@@ -114,8 +115,7 @@ tbody th {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
-tfoot th,
-tfoot td {
+tfoot th, tfoot td {
     background-color: rgba(255, 255, 255, 0.2)
 }
 
@@ -130,8 +130,8 @@ tr:nth-child(even) td {
 [type=submit] {
     border: none;
     padding: 1em 3em 1em 3em;
-    color: rgba(0,0,0,0.9);
-    background-color: rgba(255,255,255,0.9);
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 label {
@@ -159,24 +159,60 @@ input:valid {
     margin-bottom: 3em;
     background-color: rgb(55, 10, 16);
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Shadows Into Light Two', cursive;
 }
-body{
+
+body {
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.6;
 }
-ol{
+
+ol {
     list-style-type: upper-roman;
 }
-iframe{
+
+iframe {
     border-top-right-radius: 2em;
     border-bottom-left-radius: 2em;
 }
-fieldset li{
+
+fieldset li {
     padding: 0;
     list-style-type: none;
 }
-.bio{
-    
+
+.bio {
+    column-count: 3;
+    column-gap: 3em;
+}
+
+table {
+    margin-top: 1em;
+    column-span: all;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+img {
+    max-width: 100%;
+}
+
+div.bio img {
+    padding: 2%;
+    box-shadow: 2px 2px rgb(150, 0, 0);
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+
+[title="Back to Top"] {
+    box-shadow: -0.8px -0.8px rgba(0, 0, 0, 0.3);
+}
+
+[title="Back to Top"]:hover {
+    text-decoration: none;
 }
