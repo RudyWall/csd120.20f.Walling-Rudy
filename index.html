@@ -48,6 +48,7 @@
                         alt="A picture of a fancy lad from his graduation picture. The same picture from facebook and teams."
                         sizes="(max-width:500px) 150px, 300px"
                         srcset="images/facethumbnail150.jpg 150w, images/facethumbnail300.jpg 300w, images/face.jpg 806w">
+                    <img class="paperclip" src="images/paperclip.png" alt="cliping of the paper">
                 </a>
                 <p>My name is Rudy Walling and I am excited to learn how to code and create websites.
                     I am fresh out of high school and I graduated at Central Algoma Secondary School.</p>
@@ -135,35 +136,57 @@
                 </table>
             </div>
             <h2>My Favorite Things</h2>
-            <a href=https://en.wikipedia.org/wiki/Thrash_metal>
-                <figure><img src="images/logo.jpg" width=600 height=400 alt="Thrash Metal">
-                    <figcaption>Thrash metal</figcaption>
-                </figure>
-            </a>
-            <h3>Video Games I Enjoy</h3>
-            <ul>
-                <li>Minecraft</li>
-                <li>Dead By Daylight</li>
-                <li>Among us</li>
-                <li>GTA V</li>
-                <li>7 Days to Die</li>
-                <li>Team Fortress 2</li>
-            </ul>
-            <h3>Haiku</h3>
-            <p>Time comes and goes; clock<br><br>
-                Time is day and night; sun, moon<br><br>
-                It's about time to move<br><br>
-                <cite>by <span class="author">Jaxmvne</span></cite>
-            </p>
-            <h3>Public Domain Audiobook</h3>
-            <audio controls
-                src="https://ia601508.us.archive.org/8/items/adventuresofsherlockholmes_2010_librivox/sherlockholmes_01_doyle_64kb.mp3">
-                <a href="http://www.archive.org/download//adventuresofsherlockholmes_2010_librivox/adventuresofsherlockholmes_2010_librivox_64kb_mp3.zip"
-                    class="book-download-btn">Sherlock Holmes A Scandle in Bohemia</a></audio>
-            <h3>YouTube Video</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="favorites">
+                <input type="radio" id="tab1" name="favorite">
+                <label for="tab1">
+                    <h3>Music Genre</h3>
+                </label>
+                <div><a href=https://en.wikipedia.org/wiki/Thrash_metal>
+                        <figure><img src="images/logo.jpg" width=600 height=400 alt="Thrash Metal">
+                            <figcaption>Thrash metal</figcaption>
+                        </figure>
+                    </a></div>
+                <input type="radio" id="tab2" name="favorite">
+                <label for="tab2">
+                    <h3>Video Games</h3>
+                </label>
+                <div>
+                    <ul>
+                        <li>Minecraft</li>
+                        <li>Dead By Daylight</li>
+                        <li>Among us</li>
+                        <li>GTA V</li>
+                        <li>7 Days to Die</li>
+                        <li>Team Fortress 2</li>
+                    </ul>
+                </div>
+                <input type="radio" id="tab3" name="favorite">
+                <label for="tab3">
+                    <h3>Haiku</h3>
+                </label>
+                <div>
+                    <p>Time comes and goes; clock<br><br>
+                        Time is day and night; sun, moon<br><br>
+                        It's about time to move<br><br>
+                        <cite>by <span class="author">Jaxmvne</span></cite>
+                    </p>
+                </div>
+                <input type="radio" id="tab4" name="favorite">
+                <label for="tab4">
+                    <h3>Audiobook</h3>
+                </label>
+                <div><audio controls
+                        src="https://ia601508.us.archive.org/8/items/adventuresofsherlockholmes_2010_librivox/sherlockholmes_01_doyle_64kb.mp3">
+                        <a href="http://www.archive.org/download//adventuresofsherlockholmes_2010_librivox/adventuresofsherlockholmes_2010_librivox_64kb_mp3.zip"
+                            class="book-download-btn">Sherlock Holmes A Scandle in Bohemia</a></audio></div>
+                <input type="radio" id="tab5" name="favorite">
+                <label for="tab5">
+                    <h3>YouTube Video</h3>
+                </label>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/bAIbvlobWDM"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </div>
         </main>
         <footer>
             <hr>
