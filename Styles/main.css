@@ -189,7 +189,7 @@ fieldset ul {
 }
 
 .bio {
-    column-count: 3;
+    column-width: 13em;
     column-gap: 3em;
 }
 
@@ -248,6 +248,7 @@ div.gallery{
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-width: 180px;
     max-width: 100%;
 }
 div.gallery img{
@@ -264,9 +265,10 @@ div.gallery img{
 }
 div.gallery a:hover{
     scale: 1.1;
+    transition: all 200ms;
 }
 main div.bio a{
-    display: block;
+    display: inline-block;
     position: relative;
 }
 div.bio img.paperclip{
@@ -285,4 +287,14 @@ div.bio img.paperclip{
 }
 [href="#top"]:hover{
     transform: rotate(45deg);
+    transition: all 200ms;
+}
+@media screen and (max-width:450px){
+    .col-span-2{-ms-grid-column-span: 1;}
+}
+@media screen and (max-width:450px){
+    thead{display:none}
+    tfoot{display:none}
+    th{display:none}
+    td{display:block}
 }
