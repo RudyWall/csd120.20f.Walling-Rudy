@@ -296,5 +296,17 @@ div.bio img.paperclip{
     thead{display:none}
     tfoot{display:none}
     th{display:none}
-    td{display:block}
+    td{display:block; padding:0rem,1rem,0rem,1rem;}
+    table{caption-side: top;}
+    td:last-of-type{padding-bottom: 0.3em; font-style: italic; font-size: 0.8em;}
+    td::after{content:" hrs/wk"}
+}
+@media screen and (max-width:800px){
+    .favourites{flex-direction: column;}
+    div.favourites input + label{order:0};
+}
+@media screen and (max-width:410px){
+    header ul{flex-direction:column; align-items: center;}
+    header a{padding-top: 0.5em; border-top:none;}
+    header a:hover{text-decoration: underline;}
 }
