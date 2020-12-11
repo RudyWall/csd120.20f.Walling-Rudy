@@ -324,7 +324,7 @@ div.bio img.paperclip {
     }
     td {
         display: block;
-        padding: 0rem, 1rem, 0rem, 1rem;
+        padding: 0rem 1rem 0rem 1rem;
     }
     table {
         caption-side: top;
@@ -346,7 +346,6 @@ div.bio img.paperclip {
     div.favourites input+label {
         order: 0
     }
-    ;
 }
 
 @media screen and (max-width:410px) {
