@@ -255,7 +255,7 @@ div.favourites input+label {
 div.gallery {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     min-width: 180px;
     max-width: 100%;
 }
@@ -275,9 +275,11 @@ div.gallery img {
     grid-column: span 2
 }
 
-div.gallery a:hover {
-    scale: 1.1;
+div.gallery a {
     transition: all 200ms;
+}
+div.gallery a:hover {
+    transform: scale(1.1);
 }
 
 main div.bio a {
@@ -299,16 +301,16 @@ div.bio img.paperclip {
     position: sticky;
     bottom: 10px;
     display: inline-block;
+    transition: all 200ms;
 }
 
 [href="#top"]:hover {
     transform: rotate(45deg);
-    transition: all 200ms;
 }
 
 @media screen and (max-width:450px) {
     .col-span-2 {
-        -ms-grid-column-span: 1;
+        grid-column: span 1;
     }
 }
 
@@ -328,6 +330,10 @@ div.bio img.paperclip {
     }
     table {
         caption-side: top;
+    }
+    td:first-of-type {
+        padding-top: 0.3em;
+        font-weight: bold;
     }
     td:last-of-type {
         padding-bottom: 0.3em;
@@ -354,12 +360,14 @@ div.bio img.paperclip {
         align-items: center;
         height: 0;
         overflow: hidden;
+        transition: 200ms;
     }
     header a {
         padding-top: 0.5em;
         border-top: none;
     }
     header a:hover {
+        border-top: none;
         text-decoration: underline;
     }
 }
@@ -379,6 +387,8 @@ div.bio img.paperclip {
         margin-bottom: 1em;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
+        transition: transform 200ms;
     }
     nav a:hover {
         cursor: default;
@@ -388,7 +398,8 @@ div.bio img.paperclip {
         content: "";
         display: block;
         width: 40px;
-        border-top: 5px solid rgb(0, 26, 255)
+        border-top: 5px solid rgb(0, 26, 255);
+        transition: transform 200ms;
     }
     label.sandwich-icon {
         position: relative;
@@ -402,6 +413,13 @@ div.bio img.paperclip {
     #top input[type=checkbox]:checked+label+ul {
         height: 200px;
         overflow: visible;
-        transition: 200ms;
+    }
+
+    #menu-toggle:checked + .sandwich-icon {
+        transform: rotate(45deg);
+        border-top-color: transparent;
+    }
+    #menu-toggle:checked + .sandwich-icon::after {
+        transform: rotate(-90deg) translateX(10px);
     }
 }
